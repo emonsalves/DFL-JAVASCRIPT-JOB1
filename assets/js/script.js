@@ -1,8 +1,4 @@
 // Verifica que la pagina cargue
-window.onload = function () {
-    console.log("Esta cargado el HTML");
-}
- 
 let cantidadInput = document.querySelector("#cantidad");
 let colorInput = document.querySelector("#color");
 
