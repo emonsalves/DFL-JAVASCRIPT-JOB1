@@ -5,15 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" type="image/png" sizes="96x66" href="./assets/favicon/favicon-96x96.png">
 </head>
 
 <body>
-    <p>El Arrendador declara que es propietario del inmueble,
-        ubicado en _________________________, departamento
-    </p>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/notebook.jpg" alt="Foto de notebook">
+            </div>
+            <div class="card-header">
+                <h1>Laptop Gamer Intel</h1>
+            </div>
+            <div class="card-body">
+                <input type="text" placeholder="Cantidad" id="cantidad">
+                <input type="text" placeholder="Color" id="color"></input>
+                <h2>Valor : $400.000</h2>
+            </div>
+            <div class="card-footer">
+                <button id="btnCalcular">Calcular Total</button>
+            </div>
+        </div>
+        <div class="card-detalle">
+            <div class="card-detalle-header">
+                <h1>Resumen de Compra</h1>
+            </div>
+            <div class="card-detalle-body">
+                <h3>Cantidad : <span id="cantidadTotal"></span></h3>
+                <h3>Color : <span id="circuloColor"></span></h3>
+                <h2>Valor Total : <span id="valorTotal"></span></h2>
+            </div>
+
+        </div>
+    </div>
     <script src="./assets/js/script.js"></script>
+    <!-- Para convertir a CLP -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 </body>
 
 </html>

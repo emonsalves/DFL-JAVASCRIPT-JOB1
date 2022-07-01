@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Patua One", cursive;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  background-color: black;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.card, .card-detalle {
+  display: flex;
+  flex-direction: column;
+  width: 75vh;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 8px green, -3px -3px 8px green;
+}
+
+.card-img, .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img img, .card-footer img {
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  color: green;
+  height: 20vh;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: green;
+}
+
+.card-footer {
+  height: 10vh;
+}
+
+.card-detalle {
+  background-color: #323639;
+  min-height: 25vh;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  line-height: 3rem;
+  color: green;
+}
+
+.card-detalle-body {
+  background-color: #3F3F3F;
+  width: 95%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#circuloColor {
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+input {
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  width: 200px;
+  max-width: 100%;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+  border-radius: 0.3em;
+  text-align: center;
+}
+
+#btnCalcular {
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  border-radius: 15px;
+  border: 2px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 40px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+#btnCalcular:hover {
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
+}
+
+/*# sourceMappingURL=main.css.map */
