@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+$fondo-container: black;
+$fondo-card: black;
+$color-card: green;
+$fondo-detalle: #323639;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: $fondo-container;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 75vh;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px $color-card,
+        -3px -3px 8px $color-card;
+
+}
+
+.card-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-img img {
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $color-card;
+    height: 20vh;
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-card;
+}
+
+.card-footer {
+    @extend .card-img;
+    height: 10vh;
+}
+
+.card-detalle {
+    @extend .card;
+    background-color: $fondo-detalle;
+    min-height: 25vh;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    line-height: 3rem;
+    color: $color-card;
+}
+
+.card-detalle-body{
+    background-color: #3F3F3F;
+    width: 95%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;   
+}
+
+
+
+#circuloColor {
+    padding: .4rem 1rem .4rem 1rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+
+input {
+    padding: .4em 1.4em .3em .8em;
+    width: 200px;
+    max-width: 100%;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .03);
+    border-radius: .3em;
+    text-align: center;
+}
+
+#btnCalcular {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    background-color: #eae0c2;
+    border-radius: 15px;
+    border: 2px solid #333029;
+    display: inline-block;
+    cursor: pointer;
+    color: #505739;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 40px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+
+    &:hover {
+        background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+        background-color: #ccc2a6;
+    }
+}
