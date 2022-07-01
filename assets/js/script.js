@@ -1,4 +1,5 @@
 // Verifica que la pagina cargue
+
 window.onload = function () {
     console.log("Esta cargado el HTML");
 }
@@ -16,7 +17,7 @@ function calcular() {
     let calculoTotal = Number(cantidadInput.value) * Number(precio);
 
     //Conversion a Clp
-    let myNumeral = numeral (calculoTotal);
+    let myNumeral = numeral(calculoTotal);
     let currencyString = myNumeral.format('$ 0,0');
 
     //Carga a Id desde Variables
